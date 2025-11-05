@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:sales_doctor/bloc/location_bloc.dart';
 import 'package:sales_doctor/data/database_helper.dart';
 import 'package:sales_doctor/data/firebase_service.dart';
 import 'package:sales_doctor/data/location_repository.dart';
 
-import 'screens/home_screen.dart';
+import 'presentation/bloc/location_bloc.dart';
+import 'presentation/screens/home_screen.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

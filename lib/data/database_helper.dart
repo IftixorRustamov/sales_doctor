@@ -103,25 +103,12 @@ class DatabaseHelper {
     return result.map((map) => LocationModel.fromMap(map)).toList();
   }
 
-  Future<int> insertRawToDatabase2(Map<String, dynamic> data) async {
-    try {
-      final db = await database2;
-      final id = await db.insert('locations', data);
-      appLogger.d('Inserted raw map to DB2 (id: $id).');
-      return id;
-    } catch (e) {
-      appLogger.e(
-        'Error inserting raw data to DB2 (Primary Key conflict likely): $e',
-      );
-      rethrow;
-    }
-  }
-
-  Future<void> clearDatabase2() async {
-    final db = await database2;
-    final count = await db.delete('locations');
-    appLogger.i('DB2 cleared: $count rows deleted.');
-  }
+  // @Deprecated("Should not be cleared")
+  // Future<void> clearDatabase2() async {
+  //   final db = await database2;
+  //   final count = await db.delete('locations');
+  //   appLogger.i('DB2 cleared: $count rows deleted.');
+  // }
 
   Future<void> close() async {
     appLogger.i('Closing both databases.');

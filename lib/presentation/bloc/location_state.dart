@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import '../models/location_model.dart';
+import 'package:sales_doctor/models/location_model.dart';
 
 enum TrackingStatus { idle, tracking, stopped }
 
