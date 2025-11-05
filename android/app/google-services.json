@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "956998566337",
+    "project_id": "salesdoctor-336f6",
+    "storage_bucket": "salesdoctor-336f6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:956998566337:android:1956522d0bae3355802f40",
+        "android_client_info": {
+          "package_name": "com.example.sales_doctor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbAV2rdK2wmCednHCQWO_vRk6Flh36WoA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
